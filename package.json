@@ -1,0 +1,48 @@
+{
+  "name": "@hyperjumptech/strapi-optimized-image",
+  "version": "0.0.1",
+  "description": "Strapi optimized image",
+  "bugs": {
+    "url": "https://github.com/hyperjumptech/strapi-optimized-image/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hyperjumptech/strapi-optimized-image.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "Strapi",
+    "Image"
+  ],
+  "author": "@hyperjumptech",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "dynamic-code-analysis": "nyc mocha --require ts-node/register ./index.test.ts",
+    "format-check": "npm run prettier -- --check",
+    "format": "npm run prettier -- --write",
+    "lint": "eslint ./index.ts",
+    "prettier": "prettier . --ignore-path .gitignore",
+    "static-code-analysis": "npm run format-check && npm run lint",
+    "test": "npm run static-code-analysis && npm run dynamic-code-analysis"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^22.5.4",
+    "eslint": "^9.10.0",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "globals": "^15.9.0",
+    "mocha": "^10.7.3",
+    "nyc": "^17.0.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "5.5.4",
+    "typescript-eslint": "^8.5.0"
+  }
+}
