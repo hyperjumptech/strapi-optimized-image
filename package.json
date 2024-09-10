@@ -1,6 +1,6 @@
 {
   "name": "@hyperjumptech/strapi-optimized-image",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Strapi optimized image",
   "bugs": {
     "url": "https://github.com/hyperjumptech/strapi-optimized-image/issues"
