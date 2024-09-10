@@ -1,6 +1,6 @@
 {
   "name": "@hyperjumptech/strapi-optimized-image",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Strapi optimized image",
   "bugs": {
     "url": "https://github.com/hyperjumptech/strapi-optimized-image/issues"
@@ -20,6 +20,9 @@
   "author": "@hyperjumptech",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
